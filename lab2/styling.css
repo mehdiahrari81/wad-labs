@@ -1,0 +1,52 @@
+header {
+    margin: 5px;
+    padding: 5px;
+    background-color: cyan;
+    font-size: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gray;
+    color: black;
+
+}
+img {
+    max-width: 15%;
+    height:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+nav {
+background-color: aquamarine;
+padding: 10x;
+text-align: justify;
+
+
+}
+nav ul{
+    display: block;
+background-color:cadetblue;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+nav ul li{
+    display: block;
+    margin : 2.5px;
+    padding: 2.5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: darkcyan;
+}
