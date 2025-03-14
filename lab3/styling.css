@@ -1,0 +1,142 @@
+:root{
+ --color-1: grey;
+ --color-2: whitesmoke;
+ --color-3: darkgrey;
+ --color-4: lightgray;
+}
+
+header{
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    
+
+
+}
+body{
+    background-color: var(--color-2);
+}
+header img{
+    max-width: 15%;
+    height:auto;
+   padding: 10px;
+   margin-right:15%;
+   border-radius: 15px;
+}
+header span{
+    background-color: var(--color-3);
+    border-radius: 15px;
+    
+}
+header span p{
+background-color: var(--color-4);
+padding: 25px;
+margin: 40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 200%;
+border-radius: 15px;
+
+}
+main{
+    width: 60%;
+    margin-top: -12px;
+}
+main article{
+    background-color: var(--color-4);
+    font-size: larger;
+    padding-left: 15px;
+    padding-right: 15px;
+border-radius: 15px;
+
+   
+}
+
+main article h1{
+    padding-left: 10px;
+    border-radius: 15px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    padding-right: 5px;
+}
+main article h2{
+    text-transform: uppercase;
+}
+main article p{
+    background-color: var(--color-3);
+    border-radius: 15px;
+    padding-left: 5px;
+    color: black;
+
+}
+main article p:hover {
+    background-color: lightblue;
+  transition: 0.3s ease-out;
+  padding: 5px;
+    border-radius: 10px;
+}
+main article h1::after {
+    content: "🏙️";
+}
+main article ul{
+    background-color: var(--color-3);
+   border-radius: 15px;  
+   line-height: 30px;
+   letter-spacing:2px;
+}
+main img{
+    max-width: 20%;
+    max-height: 10%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+main img:hover{
+    transform: scale(1.5);
+    transition: 0.3s ease-out;
+    background-color: lightgreen;
+    padding: 5px;
+}
+.profile-card img {
+    border-radius: 50%;
+    margin-top: 15%;
+
+
+
+}
+.profile-card img:hover{
+transform: scale(2.5);
+transition: 0.2s ease-out;
+padding:5px;
+background-color: black;
+
+}
+.profile-card {
+    position: absolute;
+    background-color: var(--color-1);
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 30px;
+    width:38%;
+    height:80%;
+    margin-left: -65px;
+    margin-top: -35px;
+    text-align: center;
+    font-size: x-large;
+    top: 28%;  
+    left: 65%;
+}
+.profile-card p{
+font-size: x-large;
+font-weight: 700;
+}
+.profile-card:hover {
+background-color: darkslategray;
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+footer{
+    text-align: center;
+}
