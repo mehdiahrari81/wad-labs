@@ -11,9 +11,6 @@ header{
     align-items: center;
     padding: 5px;
     border-radius: 15px;
-    
-
-
 }
 body{
     background-color: var(--color-2);
