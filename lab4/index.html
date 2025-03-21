@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="web logo">
+        <span>lab task 4</span>
+    </header>
+    <main>
+        <h1>student records table: </h1>
+        <table>
+        <tr>
+                <th>name</th>
+                <th>last name</th>
+                <th>semester</th>
+                <th>id</th>
+                <th>age</th>
+                <th>gpa</th>
+                <th>cgpa</th>
+        </tr>
+        <tr>
+            <td>mehdi </td>
+            <td>ahrari</td>
+            <td>6th</td>
+            <td>04072213005</td>
+            <td>22</td>
+            <td>3.3</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>muhammad</td>
+            <td>furqan</td>
+            <td>6th</td>
+            <td>040722130034</td>
+            <td>20</td>
+            <td>3.3</td>
+            <td>3.0</td>
+        </tr>
+        <tr>
+            <td>asjad</td>
+            <td>yousuf</td>
+            <td>6th</td>
+            <td>04072213006</td>
+            <td>20</td>
+            <td>3.1</td>
+            <td>3.0</td>
+        </tr>
+        <tr>
+            <td>usman</td>
+            <td>mustafa</td>
+            <td>6th</td>
+            <td>04072213048</td>
+            <td>20</td>
+            <td>2.4</td>
+            <td>2.7</td>
+        </tr>
+        <tr>
+            <td>mojtaba</td>
+            <td>ghasemian</td>
+            <td>7th</td>
+            <td>04072213003</td>
+            <td>23</td>
+            <td>2.8</td>
+            <td>3.4</td>
+        </tr>
+        <tr>
+            <td>ahmad</td>
+            <td>masood</td>
+            <td>6th</td>
+            <td>04072213012</td>
+            <td>22</td>
+            <td>2.1</td>
+            <td>2.5</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>hussain</td>
+            <td>4th</td>
+            <td>04072213008</td>
+            <td>20</td>
+            <td>3.5</td>
+            <td>3.1</td>
+        </tr>
+        <tr>
+            <td>mohammad</td>
+            <td>abbasi</td>
+            <td>5th</td>
+            <td>04072213043</td>
+            <td>18</td>
+            <td>3.4</td>
+            <td>2.7</td>
+        </tr>
+        <tr>
+            <td>sadgeh</td>
+            <td>haghighi</td>
+            <td>2nd</td>
+            <td>04072213021</td>
+            <td>20</td>
+            <td>3.9</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>talha</td>
+            <td>tariq</td>
+            <td>6th</td>
+            <td>04072213033</td>
+            <td>21</td>
+            <td>2.1</td>
+            <td>2.4</td>
+        </tr>
+            
+        </table>
+        <h2>student data form:</h2>
+        <form action="index.php" method="POST">
+        <label for="fname">first-name:</label>
+        <input type="text" id="fname" placeholder="only first-name" required><br>
+
+        <label for="lname">last-name:</label>
+        <input type="text" id="lname" required><br>
+
+        <label for="sem">semester:</label>
+        <input type="number" id="sem" required><br>
+
+        <label for="id">reg no. :</label>
+        <input type="number" id="id" maxlength="11" required><br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday" required><br>
+
+        <label for="mail">student-email:</label>
+        <input type="email" id="mail" placeholder="optional"><br>
+
+
+        <label for="gen">gender:</label>
+
+        <div class=" gender-group">
+
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gen">
+
+        <label for="fem">female</label>
+        <input type="radio" id="fem" name="gen"><br>
+
+    </div>
+
+        <label for="degree">latest degree:</label>
+
+        <select id="degree">
+            <option value="BS">BS</option>
+            <option value="AD">AD</option>
+            <option value="BBA">BBA</option>
+            <option value="MA">MA</option>
+            <option value="MS">MS</option>
+        </select><br>
+
+        <label for="comment">anything to add:</label>
+        <textarea id="comment"></textarea><br>
+
+        <label for="file">picture:</label>
+        <input type="file" id="file" accept="image"><br>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <h3>report:</h3>
+    <div class="second-div">
+        <span>in general</span><br>
+     <p>i have made a table of students record , then i have made a form that a student can enter his record in it</p><br>
+     <span>what i used and why?</span>
+     <p>in HTML : i have used "table","tr","th","td" to create the structure of table<br>
+         i used "form" to collect user data and inputs<br>
+        "input" is used to make a bar that user enters in it<br>
+        "select" to make a dropdown list <br>
+        "textarea" to make a input field to enter text<br>
+        in CSS : semantic elements i have used:<br>
+        header<br>
+        main<br>
+        footer<br>
+        table<br>
+        form<br>
+        lable<br>
+        i have also used attribute selector.
+
+
+     </p>
+    </div>
+    </main>
+    <footer>
+        <p>m.mahdi ahrari</p>
+        &copy; 2025 labtask4. All rights reserved.
+    </footer>
+    
+</body>
+</html>
