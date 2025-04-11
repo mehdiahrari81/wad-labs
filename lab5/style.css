@@ -1,0 +1,187 @@
+body {
+    height: 100vh;
+    background-color: rgb(176, 254, 215);
+    margin: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "left middle right"
+      "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    border: solid 1px black;
+    
+  }
+  
+  .header {
+    grid-area: header;
+    color: whitesmoke;
+    background-color: rgba(86, 125, 95, 0.85);
+    text-align: center;
+    padding: 20px;
+    border: solid 1px black;
+  }
+  .header h1{
+    background-color: rgba(164, 191, 171, 0.817);
+    border-radius: 30px;
+    padding: 8px;
+    border: solid 2px rgb(9, 79, 23);;
+  }
+  .left{
+    grid-area: left;
+    background-color: rgba(164, 230, 215, 0.594);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px black;
+    
+  }
+
+.left h1{
+    background-color:  rgba(164, 191, 171, 0.817);
+    border-radius: 15px;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 2px rgb(9, 79, 23);
+    margin-bottom: 10%;
+}
+.left p{
+border: solid 2px rgb(3, 130, 81);
+padding: 15px;
+text-align: center;
+padding-top: 15%;
+padding-bottom: 15%;
+border-radius: 30px;
+}
+
+  
+  .middle{
+    grid-area: middle;
+    background-color: rgb(237, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+  }
+  .right{
+    grid-area: right;
+    background-color: rgba(164, 230, 215, 0.594);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    border: solid 1px black;
+  }
+  .right h1{
+    background-color: rgba(164, 191, 171, 0.817);
+    border-radius: 15px;
+    padding: 3px;
+    padding-left: 5px;
+    margin-right: 10px;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 2px rgb(9, 79, 23);
+    margin-bottom: 11%;
+  }
+  .right p{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px rgb(3, 130, 81);
+    margin-right: 10px;
+    border-radius: 30px;
+    padding-bottom:17%;
+    padding-top: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .right a{
+margin-left: 40%;
+color: black;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color:  rgba(86, 125, 95, 0.85);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: -32px;
+    border: solid 1px black;
+    
+  }
+  
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: rgba(185, 213, 199, 0.61);
+    width: 300px;
+    height: 380px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 3px rgba(67, 90, 83, 0.782);
+    border: solid 3px rgb(9, 79, 23);
+  }
+  .profile-card:hover {
+    background-color: rgba(162, 200, 188, 0.848);
+        transform: scale(1.02);
+        transition: 0.2s ease-in-out;
+        box-shadow: 0px 0px 5px 5px rgba(67, 90, 83, 0.782);
+    }
+  
+  .profile-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border: solid 2px rgb(24, 89, 53);
+  }
+  .profile-card img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+    padding:5px;
+    background-color: rgba(112, 137, 124, 0.639);
+    
+    }
+  .profile-card p {
+    margin: 5px;
+  }
+  
+  @media (max-width: 1000px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "left"
+        "middle"
+        "right"
+        "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+    }
+  
+    .left,
+    .middle,
+    .right {
+      padding: 25px;
+    }
+  
+    .profile-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
